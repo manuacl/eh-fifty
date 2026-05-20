@@ -53,7 +53,7 @@ check = [
   "check-pylint",
   "check-mypy",
 ]
-test = "pytest --verbose tests.py {args:.}"
+test = "pytest --verbose tests.py {args:}"
 clean = "rm -rf venv __pycache__ *.egg-info dist .mypy_cache .pytest_cache"
 
 [tool.pylint.'MESSAGES CONTROL']
