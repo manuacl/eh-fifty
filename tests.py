@@ -221,3 +221,4 @@ def test_headset_firmware_version(device: Device) -> None:
     version = device.get_headset_firmware_version()
     assert version.major > 0
     assert version.minor >= 0
+    assert str(version) == f"{version.major}.{version.minor}"
