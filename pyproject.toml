@@ -43,10 +43,10 @@ dependencies = [
 ]
 
 [tool.hatch.envs.default.scripts]
-check-isort = "isort --check eh_fifty.py tests.py"
-check-black = "black --check eh_fifty.py tests.py"
-check-pylint = "pylint eh_fifty.py tests.py"
-check-mypy = "mypy --no-error-summary eh_fifty.py tests.py"
+check-isort = "isort --check eh_fifty.py tests.py conftest.py"
+check-black = "black --check eh_fifty.py tests.py conftest.py"
+check-pylint = "pylint eh_fifty.py tests.py conftest.py"
+check-mypy = "mypy --no-error-summary eh_fifty.py tests.py conftest.py"
 check = [
   "check-isort",
   "check-black",
