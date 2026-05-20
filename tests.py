@@ -208,6 +208,7 @@ def test_device_info(device: Device) -> None:
     info = device.get_device_info()
     assert info.vendor_id == _VENDOR
     assert info.product_id == _PRODUCT
+    assert str(info) == "9886:002c"
 
 
 def test_base_firmware_version(device: Device) -> None:

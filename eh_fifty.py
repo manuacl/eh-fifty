@@ -494,6 +494,9 @@ class DeviceInfo:
     vendor_id: int
     product_id: int
 
+    def __str__(self) -> str:
+        return f"{self.vendor_id:04x}:{self.product_id:04x}"
+
 
 @dataclass
 class FirmwareVersion:
